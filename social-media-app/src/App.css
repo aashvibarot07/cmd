@@ -1,0 +1,158 @@
+
+.app {
+  min-height: 100vh;
+  background: #f0f2f5;
+  font-family: Arial, sans-serif;
+  color: #1c1e21;
+}
+
+.navbar {
+  background: #1877f2;
+  color: white;
+  padding: 15px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.feed {
+  max-width: 550px;
+  margin: 25px auto;
+  padding: 0 15px;
+}
+
+.profile,
+.create-post,
+.post {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 6px #00000010;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile h3,
+.profile p {
+  margin: 5px 0;
+}
+
+.profile p {
+  color: #65676b;
+}
+
+.avatar,
+.small-avatar {
+  background: #1877f2;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.avatar {
+  width: 55px;
+  height: 55px;
+  font-size: 25px;
+}
+
+.small-avatar {
+  width: 38px;
+  height: 38px;
+}
+
+.create-post textarea {
+  width: 100%;
+  height: 80px;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  resize: vertical;
+  font: inherit;
+}
+
+button {
+  padding: 9px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #1877f2;
+  color: white;
+  cursor: pointer;
+}
+
+.create-post > button {
+  width: 100%;
+}
+
+.feed-title {
+  margin: 22px 0 12px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.delete {
+  margin-left: auto;
+  background: #e74c3c;
+}
+
+.post-text {
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  margin: 18px 0;
+}
+
+.likes {
+  color: #65676b;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 12px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  flex: 1;
+  background: #f0f2f5;
+  color: #333;
+}
+
+.actions button.liked {
+  color: #e0245e;
+}
+
+.comment {
+  background: #f0f2f5;
+  padding: 10px;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 15px;
+  }
+
+  .feed {
+    margin-top: 15px;
+  }
+}

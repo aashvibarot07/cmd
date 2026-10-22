@@ -1,0 +1,97 @@
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #fff3e0, #ffffff, #e8f5e9);
+  font-family: Arial, sans-serif;
+}
+
+.clock-card {
+  width: 100%;
+  max-width: 500px;
+  padding: 35px 20px;
+  text-align: center;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px #00000020;
+  border-top: 7px solid #ff9933;
+}
+
+.flag {
+  font-size: 50px;
+}
+
+h1 {
+  margin-bottom: 5px;
+  color: #183153;
+  font-size: 36px;
+}
+
+.subtitle {
+  color: #777;
+  letter-spacing: 2px;
+}
+
+.clock {
+  margin: 30px 0 20px;
+  color: #138808;
+  font-size: clamp(30px, 8vw, 46px);
+  font-weight: bold;
+  font-variant-numeric: tabular-nums;
+}
+
+.date {
+  color: #333;
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+.timezone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #555;
+  font-size: 14px;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  background: #138808;
+  border-radius: 50%;
+}
+
+.tricolor {
+  display: flex;
+  height: 7px;
+  margin: 30px 10px 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.tricolor span {
+  flex: 1;
+}
+
+.tricolor span:nth-child(1) {
+  background: #ff9933;
+}
+
+.tricolor span:nth-child(2) {
+  background: white;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.tricolor span:nth-child(3) {
+  background: #138808;
+}
+
+.footer {
+  color: #183153;
+  font-weight: bold;
+}
